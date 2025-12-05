@@ -3,14 +3,6 @@
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local HttpService = game:GetService("HttpService")
-pcall(function()
-    local replicatedFirst = game:GetService("ReplicatedFirst")
-    for _, child in pairs(replicatedFirst:GetChildren()) do
-        if child:IsA("LocalScript") then child.Enabled = false child:Destroy() end
-    end
-    local analytics = replicatedFirst:FindFirstChild("AnalyticsPipelineController")
-    if analytics then analytics:Destroy() end
-end)
 local player = Players.LocalPlayer
 local playerScripts = player.PlayerScripts
 local controllers = playerScripts.Controllers

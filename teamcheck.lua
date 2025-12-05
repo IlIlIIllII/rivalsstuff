@@ -14,11 +14,12 @@ end
 return teamcheck
 
 -- example usage:
+-- local Players = game:GetService("Players")
 -- local teamcheck = loadstring(game:HttpGet("https://github.com/IlIlIIllII/rivalsstuff/raw/refs/heads/main/teamcheck.lua"))()
--- for _, player in pairs(game.Players:GetPlayers()) do
---     if teamcheck.isSameTeam(player) then
---         print(player.Name .. " is on your team")
+-- for _, plr in pairs(Players:GetPlayers()) do
+--     if teamcheck.isSameTeam(plr) then
+--         print(plr.Name .. " is on your team")
 --     else
---         print(player.Name .. " is an enemy")
+--         print(plr.Name .. " is an enemy")
 --     end
 -- end

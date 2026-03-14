@@ -1,4 +1,3 @@
-local script_code = [[
 local UIS = game:GetService("UserInputService")
 local Players = game:GetService("Players")
 local RS = game:GetService("RunService")
@@ -87,8 +86,5 @@ RS.Heartbeat:Connect(function()
     if not t then return end
     cc:MimicRotation(CFrame.lookAt(t.camPos, t.pos).Rotation)
 end)
-]]
 
-loadstring(script_code)()
-queue_on_teleport(script_code)
--- WAS MADE BY zzz (1181596987620077675)
+queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/dsadasdasdasasdasas/rivalsstuff/refs/heads/main/aimbot.lua"))()')
